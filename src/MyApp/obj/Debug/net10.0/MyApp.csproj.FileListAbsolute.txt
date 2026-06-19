@@ -1,0 +1,14 @@
+C:\Step2gen\TestProject\cicd-learning\src\MyApp\bin\Debug\net10.0\MyApp.exe
+C:\Step2gen\TestProject\cicd-learning\src\MyApp\bin\Debug\net10.0\MyApp.deps.json
+C:\Step2gen\TestProject\cicd-learning\src\MyApp\bin\Debug\net10.0\MyApp.runtimeconfig.json
+C:\Step2gen\TestProject\cicd-learning\src\MyApp\bin\Debug\net10.0\MyApp.dll
+C:\Step2gen\TestProject\cicd-learning\src\MyApp\bin\Debug\net10.0\MyApp.pdb
+C:\Step2gen\TestProject\cicd-learning\src\MyApp\obj\Debug\net10.0\MyApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Step2gen\TestProject\cicd-learning\src\MyApp\obj\Debug\net10.0\MyApp.AssemblyInfoInputs.cache
+C:\Step2gen\TestProject\cicd-learning\src\MyApp\obj\Debug\net10.0\MyApp.AssemblyInfo.cs
+C:\Step2gen\TestProject\cicd-learning\src\MyApp\obj\Debug\net10.0\MyApp.csproj.CoreCompileInputs.cache
+C:\Step2gen\TestProject\cicd-learning\src\MyApp\obj\Debug\net10.0\MyApp.dll
+C:\Step2gen\TestProject\cicd-learning\src\MyApp\obj\Debug\net10.0\refint\MyApp.dll
+C:\Step2gen\TestProject\cicd-learning\src\MyApp\obj\Debug\net10.0\MyApp.pdb
+C:\Step2gen\TestProject\cicd-learning\src\MyApp\obj\Debug\net10.0\MyApp.genruntimeconfig.cache
+C:\Step2gen\TestProject\cicd-learning\src\MyApp\obj\Debug\net10.0\ref\MyApp.dll
