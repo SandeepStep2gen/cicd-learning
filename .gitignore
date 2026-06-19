@@ -1,0 +1,36 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/CicdLearning.slnx
+# Build outputs
+bin/
+obj/
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+
+# Rider IDE files
+.idea/
+
+# VS Code files
+.vscode/
+
+# NuGet packages
+*.nupkg
+packages/
+
+# dotnet tool files
+.config/dotnet-tools.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test results
+TestResults/
+coverage/
+*.trx
+*.coverage
