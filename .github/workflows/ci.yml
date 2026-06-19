@@ -1,6 +1,12 @@
 name: CI Pipeline
 
-on: push
+on:
+  push:
+    branches:
+      - main          # run when code lands on main
+  pull_request:
+    branches:
+      - main          # run on PRs targeting main
 
 jobs:
   build:
