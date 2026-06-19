@@ -1,0 +1,25 @@
+name: CI Pipeline
+
+on: push          # run whenever you push code
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest    # GitHub gives you a free Linux machine
+
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore packages
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build --no-restore
+
+      - name: Run tests
+        run: dotnet test --no-build
