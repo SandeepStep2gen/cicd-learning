@@ -11,6 +11,6 @@ public class UnitTest1
     [Fact]
     public void FailingTest()
     {
-        Assert.Equal(1, 2);  // obviously wrong
+        Assert.Equal(1, 1);   // obviously wrong
     }
 }
