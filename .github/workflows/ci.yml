@@ -9,8 +9,8 @@ on:
       - main
 
 env:
-  APP_NAME: CicdLearning          # available to ALL jobs
-  DOTNET_ENVIRONMENT: CI          # tells .NET we're in CI environment
+  APP_NAME: CicdLearning
+  DOTNET_ENVIRONMENT: CI
 
 jobs:
   build:
@@ -25,7 +25,7 @@ jobs:
           dotnet-version: '10.0.x'
 
       - name: Restore packages
-        run: dotnet restore
+        run: dotnet restore CicdLearning.slnx
 
       - name: Build
         run: dotnet build --no-restore
@@ -33,8 +33,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
     needs: build
-    env:
-      MY_SECRET: ${{ secrets.MY_FIRST_SECRET }}   # ← using the secret
     steps:
       - name: Get the code
         uses: actions/checkout@v4
@@ -44,8 +42,14 @@ jobs:
         with:
           dotnet-version: '10.0.x'
 
-      - name: Print secret (to see masking)
-        run: echo "My secret is $MY_SECRET"
-
       - name: Run tests
         run: dotnet test
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test          # only deploy if tests pass
+    if: github.ref == 'refs/heads/main'   # only deploy from main branch
+    steps:
+      - name: Trigger Render deploy
+        run: |
+          curl "${{ secrets.RENDER_DEPLOY_HOOK }}"
